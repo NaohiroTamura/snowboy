@@ -4,14 +4,14 @@
 
 echo "Installing SWIG"
 
-if [ ! -e swig-3.0.10.tar.gz ]; then
-  cp exteral_tools/swig-3.0.10.tar.gz ./ || \
+if [ ! -e swig-3.0.12.tar.gz ]; then
+  cp exteral_tools/swig-3.0.12.tar.gz ./ || \
   wget -T 10 -t 3 \
-    http://prdownloads.sourceforge.net/swig/swig-3.0.10.tar.gz || exit 1;
+    http://prdownloads.sourceforge.net/swig/swig-3.0.12.tar.gz || exit 1;
 fi
 
-tar -xovzf swig-3.0.10.tar.gz || exit 1
-ln -s swig-3.0.10 swig
+tar -xovzf swig-3.0.12.tar.gz || exit 1
+ln -s swig-3.0.12 swig
 
 cd swig
 
